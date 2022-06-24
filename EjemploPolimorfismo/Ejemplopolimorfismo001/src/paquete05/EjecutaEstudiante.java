@@ -1,9 +1,7 @@
-
 package paquete05;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import paquete04.Estudiante;
 
 public class EjecutaEstudiante {
 
@@ -15,8 +13,8 @@ public class EjecutaEstudiante {
         El usuario decide de manera prevía cuantos objetos
         de tipo EstudiantePresencial y EstudianteDistancia
         quiere ingresar.
+         */
         
-        */
         Scanner entrada = new Scanner(System.in);
         String nombresEst;
         String apellidosEst;
@@ -30,23 +28,18 @@ public class EjecutaEstudiante {
         String continuar;
         int contador;
         ArrayList<Estudiante> estudiantes = new ArrayList<>();
-        
+
         // inicio de solución
-        
-        
-        
-        
-        
         // ciclo que permite comprobar el polimorfismo
         // este código no debe ser modificado.
         for (int i = 0; i < estudiantes.size(); i++) {
             // 1.  
             estudiantes.get(i).calcularMatricula();
-            
+
             System.out.printf("Datos Estudiante\n"
-                        + "%s\n",                        
-                  estudiantes.get(i));
-            
+                    + "%s\n",
+                    estudiantes.get(i));
+
         }
     }
 

@@ -11,26 +11,24 @@ public class EjecutaEstudiante {
         El usuario decide cuando terminar el proceso
          */
         Scanner entrada = new Scanner(System.in);
+        
         String nombresEst;
         String apellidosEst;
         String identificacionEst;
-        int edadEst;
-        double costoCred;
-        int numeroCreds;
-        double costoAsig;
-        int numeroAsigs;
-        int tipoEstudiante;
         String continuar;
-        int contador;
+        double costoCred ,costoAsig;
+        int numeroCreds ,numeroAsigs , tipoEstudiante, edadEst;
+        
+        
         ArrayList<Estudiante> estudiantes = new ArrayList<>();
 
         // inicio de solución
         do {
             // Se imprime mensaje en pantalla para solicitar
             // el tipo de estudiante que se desea ingresar
-            System.out.println("Tipo de Estudiante a ingresar\n"
-                    + "Ingrese (1) para Estudiante Presencial"
-                    + "Ingrese (2) para Estudiante Distancia");
+            System.out.println(" Tipo de Estudiante a ingresar\n"
+                    + " Ingrese (1) para Estudiante Presencial "
+                    + " Ingrese (2) para Estudiante Distancia");
             // se captura el valor ingresado por el usuario en la variable tipoEstudiante
             tipoEstudiante = entrada.nextInt();
             entrada.nextLine();
@@ -155,7 +153,7 @@ public class EjecutaEstudiante {
             estudiantes.get(i).calcularMatricula();
 
             System.out.printf("------------------\n"
-                    + "Datos Estudiante\n"
+                    + "   Datos Del Estudiante\n"
                     + "%s\n",
                     estudiantes.get(i));
         }
